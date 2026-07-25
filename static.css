@@ -1,0 +1,21 @@
+/* Estados interactivos del sitio estático (acordeón, carrusel, menú móvil) */
+
+/* Acordeón de beneficios */
+.syt-acc-item { box-shadow: var(--shadow-sm); }
+.syt-acc-item.open { box-shadow: var(--shadow-lg); }
+.syt-acc-btn { color: var(--color-ink-black); }
+.syt-acc-item.open .syt-acc-btn { color: var(--color-ember-flame); }
+.syt-acc-body { display: none; }
+.syt-acc-item.open .syt-acc-body { display: flex; }
+.syt-acc-ic { display: inline-flex; }
+.syt-acc-minus { display: none; }
+.syt-acc-item.open .syt-acc-plus { display: none; }
+.syt-acc-item.open .syt-acc-minus { display: inline-flex; }
+
+/* Carrusel de fotos */
+.syt-sl-btn:disabled { opacity: 0.5; cursor: default; color: var(--color-smoke); }
+@media (max-width: 820px) {
+  .syt-slider { gap: 10px !important; }
+  .syt-sl-track { flex: 1; }
+  .syt-slide > div { transform: none !important; width: 100% !important; padding: 14px !important; }
+}
