@@ -1,0 +1,8 @@
+:root{
+  --shadow-sm:rgba(0,0,0,0.2) 0px 1px 4px 0px;
+  --shadow-lg:rgba(250,166,0,0.25) 6px 4px 24px 0px;
+  --transition-fast:120ms ease; /* @kind other */
+  --transition-base:200ms ease; /* @kind other */
+  --focus-ring:2px solid var(--color-ember-flame);
+  --focus-ring-offset:4px;
+}

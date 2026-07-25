@@ -1,0 +1,32 @@
+:root{
+  /* Base palette */
+  --color-ember-flame:#fa5d00; /* primary orange — CTA, links, accents */
+  --color-marigold-glow:#fee3b5; /* warm highlight wash */
+  --color-parchment-shadow:#e3d6c5; /* warm shadow hue */
+  --color-ink-black:#1d1e1c; /* warm near-black text */
+  --color-paper-white:#ffffff;
+  --color-cream-canvas:#fff8f1; /* signature page background */
+  --color-mist-gray:#d9d9d9;
+  --color-warm-stone:#615f5c;
+  --color-driftwood:#8e8b87;
+  --color-ironwood:#4a4a47;
+  --color-ash:#777571;
+  --color-bone:#c0bbb6;
+  --color-smoke:#a5a19c;
+  --color-graphite:#999999;
+  /* Brand extras drawn from the logo */
+  --color-cactus-green:#2e5d43; /* mascot outline green — secondary brand accent, sparing use */
+  /* Semantic aliases */
+  --text-primary:var(--color-ink-black);
+  --text-secondary:var(--color-warm-stone);
+  --text-tertiary:var(--color-driftwood);
+  --text-disabled:var(--color-smoke);
+  --text-on-orange:var(--color-paper-white);
+  --surface-page:var(--color-cream-canvas);
+  --surface-card:var(--color-paper-white);
+  --surface-action:var(--color-ember-flame);
+  --border-input:var(--color-bone);
+  --border-divider:var(--color-mist-gray);
+  --accent:var(--color-ember-flame);
+  --accent-hover:#e05400;
+}

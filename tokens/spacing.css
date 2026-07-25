@@ -1,0 +1,16 @@
+:root{
+  --spacing-4:4px; --spacing-5:5px; --spacing-7:7px; --spacing-10:10px;
+  --spacing-14:14px; --spacing-15:15px; --spacing-16:16px; --spacing-20:20px;
+  --spacing-22:22px; --spacing-25:25px; --spacing-30:30px; --spacing-35:35px;
+  --spacing-40:40px; --spacing-50:50px; --spacing-100:100px; --spacing-113:113px;
+  --page-max-width:1200px;
+  --section-gap:72px; /* 64–80px range */
+  --card-padding:36px; /* 32–40px range */
+  --element-gap:20px; /* 16–24px range */
+  --radius-buttons:16px;
+  --radius-inputs:16px;
+  --radius-images:16px;
+  --radius-cards:20px;
+  --radius-tags:999px;
+  --radius-full:999px;
+}
