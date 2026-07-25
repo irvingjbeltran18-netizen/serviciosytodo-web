@@ -1,11 +1,17 @@
 function App() {
   const { NavBar } = DS;
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
-  const [screen, setScreen] = React.useState("home");
-  React.useEffect(() => { lucide.createIcons(); window.scrollTo(0, 0); }, [screen]);
-  const go = (s) => setScreen(s);
   const routes = { "#inicio": "home", "#servicios": "services", "#construccion": "construction", "#remodelacion": "remodel", "#mantenimiento": "maintenance", "#trabajo": "projects", "#mision": "about", "#contacto": "contact" };
   const hrefs = { home: "#inicio", services: "#servicios", construction: "#construccion", remodel: "#remodelacion", maintenance: "#mantenimiento", projects: "#trabajo", about: "#mision", contact: "#contacto" };
+  const getScreenFromHash = () => routes[window.location.hash] || "home";
+  const [screen, setScreen] = React.useState(getScreenFromHash());
+  React.useEffect(() => { lucide.createIcons(); window.scrollTo(0, 0); }, [screen]);
+  React.useEffect(() => {
+    const onHashChange = () => setScreen(getScreenFromHash());
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
+  const go = (s) => { window.location.hash = hrefs[s] || "#inicio"; };
   const screens = { home: HomeScreen, services: ServicesScreen, construction: ConstructionScreen, remodel: RemodelScreen, maintenance: MaintenanceScreen, projects: ProjectsScreen, about: AboutScreen, contact: QuoteScreen };
   const Screen = screens[screen];
   return (
