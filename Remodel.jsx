@@ -43,7 +43,7 @@ function RemodelScreen({ go }) {
         <ProcessSteps steps={steps} />
       </Section>
       <Section style={{ marginTop: 88 }}>
-        <Guarantee go={go} text={'Estamos tan seguros que podemos crear el hogar de sus sueños que le ofrecemos nuestra "Garantía de Satisfacción Absoluta". Si al final de cualquier etapa del proceso no está completamente satisfecho, le encontraremos una constructora que sí lo entienda. Pero dudamos que eso ocurra. Muchos de nuestros clientes pasados han dicho que aprecian nuestra paciencia, ética y honestidad. Y en cuanto a nuestro trabajo, jamás nos han corrido por mala calidad. Solo hacemos hogares de calidad fenomenal.'} />
+        <Guarantee go={go} text={'Estamos tan seguros que podemos crear el hogar de sus sueños que le ofrecemos nuestra "Garantía de Tranquilidad Total". Si al final de cualquier etapa del proceso no está completamente satisfecho, le encontraremos una constructora que sí lo entienda. Pero dudamos que eso ocurra. Muchos de nuestros clientes pasados han dicho que aprecian nuestra paciencia, ética y honestidad. Y en cuanto a nuestro trabajo, jamás nos han corrido por mala calidad. Solo hacemos hogares de calidad fenomenal.'} />
       </Section>
       <Section style={{ marginTop: 88 }}>
         <Gifts go={go} giftText="Díganos qué busca. Y le daremos recomendaciones personalizadas, al igual que un desglose general sobre los costos que puede esperar de su remodelación. También le daremos una lasaña deliciosa cuando comencemos a trabajar juntos." />

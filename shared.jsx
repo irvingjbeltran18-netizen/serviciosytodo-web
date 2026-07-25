@@ -96,7 +96,7 @@ function PhotoSlider({ images = [], height = 150 }) {
     </div>
   );
 }
-const Guarantee = ({ text, go, title = "Garantía de Satisfacción Absoluta" }) => {
+const Guarantee = ({ text, go, title = "Garantía de Tranquilidad Total" }) => {
   const { SectionHeading, Button } = DS;
   return (
     <div style={{ background: "var(--color-paper-white)", borderRadius: "var(--radius-cards)", padding: "44px 40px", boxShadow: "var(--shadow-lg)", maxWidth: 860, margin: "0 auto", textAlign: "center", display: "flex", flexDirection: "column", gap: 20, alignItems: "center" }}>
