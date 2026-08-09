@@ -21,4 +21,20 @@
   /* Footer apilado */
   footer > div { flex-direction: column; align-items: flex-start; }
   footer div[style*="gap: 56px"] { gap: 24px !important; }
+
+  /* Tarjeta de reseña (foto + texto): foto arriba, alineado a la izquierda, mismo tamaño */
+  .syt-review-card { flex-direction: column !important; align-items: flex-start !important; }
+
+  /* Botón + "Ver más" del hero: uno debajo del otro, sin dos columnas */
+  .syt-hero-cta { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
+
+  /* Par de fotos rotadas del hero / acordeón: apiladas, sin rotación, conservando tamaño y proporción */
+  .syt-hero-photos, .syt-sl-track { flex-direction: column !important; align-items: center !important; gap: 16px !important; }
+  .syt-hero-photos > div, .syt-sl-track .syt-slide > div, .syt-sl-track > div { transform: none !important; }
+
+  /* Tarjetas de la sección Servicios (mantenimiento): mismo padding y alineación que Beneficios */
+  .syt-service-item { padding: 18px 24px !important; background: var(--color-paper-white) !important; border-radius: var(--radius-cards) !important; text-align: left !important; }
+
+  /* Carrusel de fotos: nunca envolver, conserva su desplazamiento uno a la vez con las flechas */
+  #syt-carrusel-track { flex-wrap: nowrap !important; }
 }
